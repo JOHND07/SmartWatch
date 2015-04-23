@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="#ffffffff"  
+    android:orientation="vertical" >  
+  
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/left_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/my_recoder"
+            android:textColor="#ffffff"
+            android:textSize="18sp"  >
+        </TextView>
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/right_btn" />
+     </LinearLayout>
+     
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/chartlayout"  
+        android:layout_width="fill_parent"  
+        android:layout_height="380dp" >  
+    </LinearLayout>  
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+    <LinearLayout
+        android:id="@+id/ly_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+        <TextView 
+            android:visibility="gone"
+            android:id="@+id/current_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/total_stepnum_in_month"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/step_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/step"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/ly_two"
+        android:layout_below="@+id/ly_one"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/total_calorie_in_month"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/calorite_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/calorie_unit"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+        
+        <TextView 
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="@string/approximate"
+            android:textSize="32sp"
+            android:textColor="@android:color/darker_gray" />
+        
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/coke_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@color/background_color" />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/num_cola"
+            android:textColor="@android:color/darker_gray" />
+        
+        <!-- <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="瓶可乐"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" /> -->
+        
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:id="@+id/ly_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/ly_one"
+        android:layout_below="@+id/ly_two"
+        android:visibility="gone" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相当于" />
+    <TextView
+        android:id="@+id/coke_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="瓶可乐" />
+    </LinearLayout>
+        
+    
+    <LinearLayout
+        android:id="@+id/ly_four"
+        android:layout_below="@+id/ly_three"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/total_mileage_in_month"
+            android:textColor="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/mile_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@android:color/darker_gray" />
+         <TextView
+             android:id="@+id/meileage_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/meter_unit"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+         
+         <TextView 
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:text="@string/approximate"
+            android:textSize="32sp"
+            android:textColor="@android:color/darker_gray" />    
+        
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/playground_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@color/background_color" />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/num_playground"
+            android:textColor="@android:color/darker_gray" />
+       
+         <!-- <TextView
+            android:id="@+id/playground_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@color/background_color" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="圈400米操场"
+            android:textColor="@android:color/darker_gray"  /> -->
+    </LinearLayout>
+
+    </RelativeLayout>
+    
+</LinearLayout>

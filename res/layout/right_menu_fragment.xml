@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:text="@string/remindsetting"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/phone"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/phone_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/message"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/sms_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/email"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/email_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/event"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/event_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/battery"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/battery_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+        
+    
+    
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/socialcontact"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        
+    </RelativeLayout>    
+  
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_menu_line" />
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/webchat"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/webchat_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout> 
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/QQ"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/qq_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>    
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/skype"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/skype_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/whatsApp"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/whatsApp_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+    
+    <!-- facebook -->
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/FaceBook"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+		    android:id="@+id/facebook_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />        
+    </RelativeLayout>
+    
+    <!-- 模式 -->
+    <LinearLayout
+        android:id="@+id/mode_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/mode"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>    
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:id="@+id/voice_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Beep"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+		    
+		<ImageView
+		    android:visibility="invisible"
+		    android:id="@+id/voice_img_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/zq_add_choose_selected_icon" />        
+    </RelativeLayout>
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:id="@+id/shake_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Vibration"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+		<ImageView
+		    android:visibility="invisible"
+		    android:id="@+id/shake_img_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/zq_add_choose_selected_icon" />       
+    </RelativeLayout>    
+    
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:id="@+id/voice_shake_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Beep_Vibration"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+		<ImageView
+		    android:id="@+id/voice_shake_img_Btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/zq_add_choose_selected_icon" />  
+    </RelativeLayout>    
+    </LinearLayout>
+    <!-- 模式 -->
+    
+    
+    <!-- 其它 -->
+     <RelativeLayout
+        android:id="@+id/other_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/other"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>    
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:id="@+id/track_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Anti_lost"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <com.guogee.smartwatch.widget.Switch
+            android:visibility="gone"
+		    android:id="@+id/tracker_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp" />  
+        <ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/more_triangle" />
+    </RelativeLayout>
+    
+    <!-- 拍照 -->
+    <RelativeLayout
+        android:id="@+id/take_pic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Photo"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/more_triangle" />
+    </RelativeLayout>    
+
+    <!-- 闹钟 -->
+    <RelativeLayout
+        android:id="@+id/clock_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@drawable/login_input_bg" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/smart_clock"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    android:background="@drawable/more_triangle" />
+    </RelativeLayout>    
+    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2e2e2" >
+    
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/left_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="能量豆"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sync"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的能量豆:"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+                <TextView
+                    android:id="@+id/bean_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView1"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_marginLeft="15dp"
+                    android:text="52342"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+                
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bean_num"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/plusdot_gift_bean_1"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="86dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:visibility="visible" >
+                <Button
+                    android:id="@+id/get_bean_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/person_info_btn"
+                    android:text="如何获取能量豆?"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_above="@+id/relativeLayout2" >
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+                
+               <RelativeLayout
+                   android:id="@+id/bean_reconnect_tip_ly"
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:gravity="center"
+                   android:visibility="gone" >
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="加载失败 请检查您的网络，轻击屏幕重新加载" />
+               </RelativeLayout> 
+               
+         </FrameLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>

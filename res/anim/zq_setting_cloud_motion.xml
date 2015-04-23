@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list
+	android:oneshot="false"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:duration="450" android:drawable="@drawable/zq_setting_cloud_motion1"></item>
+	<item android:duration="450" android:drawable="@drawable/zq_setting_cloud_motion2"></item>
+	<item android:duration="450" android:drawable="@drawable/zq_setting_cloud_motion3"></item>
+	
+</animation-list>

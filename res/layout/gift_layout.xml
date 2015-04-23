@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/left_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/left_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="好礼兑换"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/syn_Btn"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sync"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </LinearLayout>
+    
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-6dp"
+        android:gravity="top"
+        android:background="@drawable/zq_public_nav_bg"
+        android:orientation="horizontal" >
+
+     <RadioButton
+        android:id="@+id/exchange_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/tab_selector_brightness"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center_horizontal|bottom|top"
+        android:text="兑换活动"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textSize="14sp" /> 
+
+    <RadioButton
+        android:id="@+id/my_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tab_selector_color"
+        android:button="@null"
+        android:gravity="center_horizontal|bottom|top"
+        android:text="我的礼包"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        android:textSize="14sp" />
+    </RadioGroup>
+
+    <!-- <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+    </ListView> -->
+    
+    <com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+    
+</LinearLayout>

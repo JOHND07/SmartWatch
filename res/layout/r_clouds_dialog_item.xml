@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:id="@+id/linManual"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/img_match_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/zq_activation_warning_icon"/>
+			<TextView 
+			    android:id="@+id/text_manual"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="5dp"
+			    android:layout_gravity="center_horizontal"
+			    android:gravity="center"
+			    android:text="@string/zq_your_device_not_manual"
+			    android:textColor="#fff"
+			    android:textSize="16sp"/>
+        </LinearLayout>
+  
+	<FrameLayout 
+	    android:id="@+id/link_bg"
+	    android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	<ImageView
+	    android:layout_marginTop="20dp"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/bind_watch_sign" />
+	<ImageView
+	    android:id="@+id/img_remote"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:src="@drawable/link_bg" />
+	</FrameLayout>
+
+	<TextView
+	    android:id="@+id/text_remote"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/link_bg"
+	    android:layout_marginTop="30dp"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"
+	    android:text="@string/zq_please_infrared_remote_control_box"
+	    android:textColor="#fff"
+	    android:textSize="16sp" />
+	
+	<!-- <Button 
+	    android:id="@+id/btn_ok"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"
+	    android:layout_marginTop="30dp"
+	    android:layout_below="@+id/text_remote"
+	    android:background="@drawable/zq_study_pli_icon_bg"
+	    android:text="ok"
+	    android:textColor="#fff"
+	    android:textSize="18sp"/> -->
+ </RelativeLayout>

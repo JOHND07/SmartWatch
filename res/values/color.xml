@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- -->
+         <color name="background_color">#49D6E7</color> 
+
+<!--  
+         <color name="background_color">#f47fdd</color>
+-->         
+         <color name="background_inside_color">#10B9CC</color>
+         <color name="text_color">#44DBEC</color>
+         <color name="text_color2">#303030</color>
+         <color name="textColor">#888888</color>
+         <color name="list_item_color">#E7F5F5</color>
+         <color name="background_color2">#e2e2e2</color>
+         <color name="line_color">#C7C7C7</color>
+         <color name="login_text_color">#878787</color>
+         <color name="list_click">#caeff4</color>
+         <color name="router_text_color">#04477d</color>
+         <color name="save_time_pressed_true">#8cdddddd</color>
+         <color name="save_time_pressed_false">#8cfafafa</color>
+         <color name="main_line_color">#8fe7f0</color>
+         
+         <color name="chaoke_hint">#ffb4b4b4</color>
+         <color name="chaoke_black">#262626</color>
+         <color name="chaoke_nochecked">#b7b7b7</color>
+         <color name="transparent">#00000000</color>
+         <color name="transparent_background">#801a1a1a</color>
+
+         <color name="menu_diet">#b7b7b7</color>
+         <color name="kinds_of_diet_item_bg">#efefef</color>
+         
+         <color name="deeplightSleep">#2BFFD5</color>
+         <color name="transparent_black">#C0000000</color>
+         <color name="transparent_black2">#30000000</color>
+         
+</resources>

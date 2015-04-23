@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guogee.smartwatch"
+    android:versionCode="1"
+    android:versionName="1.3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+    
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    
+ 	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+ 	<uses-permission android:name="android.permission.READ_SMS" /> 
+ 	<uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    <application
+        android:name="com.guogee.smartwatch.iSmartApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        
+        <activity
+            android:name="com.guogee.smartwatch.ui.SplashActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.guogee.smartwatch.MainActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.guogee.smartwatch.ui.TrackActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.SignActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.WebViewActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.playcamera.CameraActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.FoundActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.VersionUpdateActivity"
+            android:screenOrientation="portrait" />
+            
+        <activity android:name="com.guogee.smartwatch.ui.SportTarget"
+            android:screenOrientation="portrait" />            
+
+        <activity android:name="com.guogee.smartwatch.ui.ExerciseActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.SmartClockActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.guogee.smartwatch.ui.AchartEngineBar"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.GiftActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.CodeActivity"
+            android:screenOrientation="portrait" />
+                
+        <activity android:name="com.guogee.smartwatch.ui.BeanTipActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.guogee.smartwatch.ui.ExchangeActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.guogee.smartwatch.ui.GuideActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <activity android:name="com.guogee.smartwatch.ui.SetUserData"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />        
+        
+        <!-- dialog -->
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetCurrWeight"
+            android:label="设置当前体重"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme.Light" />        
+            
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetDate"
+            android:label="设置生日"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme.Light" />
+        
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetHeight"
+             android:label="设置身高"
+             android:theme="@style/SampleTheme.Light"
+             android:screenOrientation="portrait" />        
+            
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetNumber"
+            android:screenOrientation="portrait" /> 
+                   
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetRecordDate"
+            android:label="设置日期"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetULable"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.guogee.smartwatch.ui.BindingScanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetUName"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="com.guogee.smartwatch.dialog.DialogSetWeight"
+            android:label="设置目标体重"
+            android:theme="@style/SampleTheme.Light"
+            android:screenOrientation="portrait" />        
+        <!-- dialog -->
+        
+        <activity android:name="org.achartengine.chartdemo.demo.chart.TestActicity" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.SleepCharActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.SportCharActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.achartengine.chartdemo.demo.chart.SportCharView"
+            android:screenOrientation="portrait" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.SleepCharView"
+            android:screenOrientation="portrait" />
+        
+        <service android:name="com.guogee.smartwatch.ble.BluetoothLeService" android:enabled="true"/>
+        
+        <service android:name="com.guogee.smartwatch.service.NLService"
+                 android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        
+        <!--  -->
+        <receiver android:name=".InCallReceiver" android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="StartupReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:enabled="true" android:name="com.guogee.smartwatch.service.SWService" />
+        
+        <!-- clock -->
+        <activity
+            android:name="com.guogee.smartwatch.clock.DeskClockMainActivity" 
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation">
+            
+            <!-- while docked, this is our home application -->
+            <meta-data android:name="android.dock_home" android:value="true" />
+            <intent-filter >
+                <category android:name="android.intent.category.DESK_DOCK" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.guogee.smartwatch.clock.SettingsActivity"
+                android:taskAffinity=""
+                android:excludeFromRecents="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+       <activity android:name="com.guogee.smartwatch.clock.AlarmAlertFullScreen"
+           android:excludeFromRecents="true"
+           android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+           android:launchMode="singleInstance"
+           android:taskAffinity=""
+           android:configChanges="orientation|keyboardHidden|keyboard|navigation"/>
+
+        <receiver android:name="AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.guogee.smartwatch.clock.ALARM_ALERT" />
+                <action android:name="alarm_killed" />
+                <action android:name="cancel_snooze" />
+            </intent-filter>
+        </receiver>
+            
+        <activity android:name="com.guogee.smartwatch.clock.AlarmAlert"
+            android:excludeFromRecents="true"
+            android:theme="@style/alarm_alert"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"/>
+            
+        <activity android:name="org.achartengine.chartdemo.demo.GeneratedChartDemo" />
+        <activity android:name="org.achartengine.chartdemo.demo.chart.XYChartBuilder" />
+        <activity android:name="org.achartengine.GraphicalActivity" 
+             android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity android:name="com.guogee.smartwatch.clock.HandleSetAlarm"
+                android:theme="@android:style/Theme.NoDisplay"
+                android:excludeFromRecents="true"
+                android:permission="com.android.alarm.permission.SET_ALARM">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- This service receives the same intent as AlarmReceiver but it does
+             not respond to the same broadcast. The AlarmReceiver will receive
+             the alert broadcast and will start this service with the same
+             intent. The service plays the alarm alert and vibrates the device.
+             This allows the alert to continue playing even if another activity
+             causes the AlarmAlert activity to pause. -->
+         <service
+            android:name="no.nordicsemi.android.nrftoolbox.dfu.DfuService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <!-- clock -->
+    </application>
+
+</manifest>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/zq_setting_mid" >
+    
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/left_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/left_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/binded_watch"
+            android:textColor="#ffffff"
+            android:textAppearance="@android:style/TextAppearance.Medium" >
+        </TextView>
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:background="@drawable/right_btn" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bind_watch_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:background="@android:color/white" >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/plusdot_watch"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/login_text_color" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/trace_tip"
+            android:textColor="@color/login_text_color" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/bind_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/zq_add_choose_selected_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:background="@android:color/white" >
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Plusdot 手表2" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/login_text_color"
+            android:text="追踪活动/睡眠，蓝牙4.0无线连接" />
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zq_add_choose_selected_icon" />
+    </RelativeLayout>
+    
+    
+ <!--    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/plusdot_one"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/plusdot_one" />
+        <TextView
+            android:id="@+id/bind_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusdot_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/smart_watch_p1"
+            android:textColor="@color/text_color" />
+    </RelativeLayout> -->
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/plusdot_one"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/plusdot_one" />
+        <TextView
+            android:id="@+id/bind_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusdot_one"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/smart_watch_p1"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+    
+    
+<!--     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/plusdot_two"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/plusdot_two" />
+        <TextView
+            android:id="@+id/bind_tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plusdot_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/smart_watch_p2"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>  -->
+
+    
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+        <Button
+        android:id="@+id/save_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/save_height"
+        android:gravity="right|center_vertical"
+        android:paddingRight="20dp"
+        android:background="@drawable/zq_save_btn"
+        android:text="ok"
+        android:textColor="#878787" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom" >
+
+        <com.guogee.smartwatch.widget.WheelView
+            android:id="@+id/hour"
+            android:layout_gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/wheel_width"
+            android:layout_weight="1" />
+        <com.guogee.smartwatch.widget.WheelView
+            android:id="@+id/mins"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/wheel_width"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

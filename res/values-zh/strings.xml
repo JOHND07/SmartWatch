@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">+o watch</string>
+<!--      
+    <string name="hours">时</string>
+    <string name="mins">分</string>
+-->
+    <string name="mins_eg_str">h</string>
+    
+    <string name="hours_text"></string>
+    <string name="mins_text"></string>
+
+    <string name="smart_minute">分钟</string>
+    <string name="day1">每周一</string>
+    <string name="day2">每周二</string>
+    <string name="day3">每周三</string>
+    <string name="day4">每周四</string>
+    <string name="day5">每周五</string>
+    <string name="day6">每周六</string>
+    <string name="day7">每周日</string>
+    <string name="str_current_mounth">月</string>
+    <string name="str_current_date">日</string>
+    <string name="str_today">今天</string>
+    <string name="sync">同步</string>
+    <string name="syncing">正在同步</string>
+    <string name="str_yesterday">昨天</string>
+    <string name="str_sport_target">设置目标</string>
+    
+    <string name="sync_success">同步成功</string>
+    <string name="sync_error">同步失败</string>
+    <string name="progress">%d%%</string>
+    
+    <string name ="connecting">连接中...</string>
+    <string name ="connect_tip">智能手表 连接中</string>
+    <string name ="connected_tip">智能手表 已连接</string>
+    <string name ="disconnected_tip">智能手表 断开连接</string>
+    
+    <string name ="disconnect">蓝牙断开，请检查设备设备是否连接</string>
+    
+    <string name="exit_tip">再按一次返回键退出</string>
+    <string name="remindsetting">提醒设置</string>
+    <string name="remind">提醒</string>
+    <string name="phone">电话</string>
+    <string name="message">短信</string>
+    <string name="email">邮件</string>
+    <string name="event">事件</string>
+    <string name="battery">电池</string>
+    <string name="socialcontact">社交</string>
+    <string name="webchat">微信</string>
+    <string name="QQ">QQ</string>
+    <string name="Twitter">Twitter</string>
+    <string name="FaceBook">FaceBook</string>
+    <string name="skype">Skype</string>
+    <string name="whatsApp">WhatsApp</string>
+    
+    <string name="loading">正在加载中...</string>
+    <string name="binded_watch">绑定配件</string>
+    <string name="plusdot_watch">Plusdot 手表</string>
+    
+    <string name="trace_tip">追踪活动/睡眠，蓝牙4.0无线连接</string>
+    <string name="step">步</string>
+    <string name="step1">步</string>
+    <string name="hour_num">时</string>
+    <string name="minute_num">分</string>
+    
+    <string name="minute_unit">分</string>
+    <string name="target_num">目标：</string>
+    <string name="wakeup_space">唤醒时段</string>
+    <string name="alarm">闹钟</string>
+    <string name="smart_alarm">智能闹钟</string>
+    
+    <string name="smart_alarm_tip">添加闹钟，手表会在指定的时间将您唤醒</string>
+    
+    <string name="start_time">开始</string>
+    <string name="smart_start_time">开始</string>
+    <string name="end_time">结束</string>
+    <string name="interval">间隔</string>
+    
+    <string name="my_recoder">我的记录</string>
+    <string name="Mon">周一</string>
+    <string name="Tues">周二</string>
+    <string name="Wed">周三</string>
+    <string name="Thur">周四</string>
+    <string name="Fri">周五</string>
+    <string name="Sat">周六</string>
+    <string name="Sun">周日</string>
+    
+    <string name="home">首页</string>
+    <string name="account">账号</string>
+    <string name="store">商城</string>
+    <string name="found">查找手表</string>
+    <string name="feedback">反馈</string>
+    
+    <string name="addClock">添加闹钟</string>
+    <string name="delClock">删除闹钟</string>
+    <string name="repeat">重复</string>
+    <string name="snooze">稍后提醒</string>
+    
+    <string name="cancle">取消</string>
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+    <string name="alarmClock">设置闹钟</string>
+    
+    <string name="one">一</string>
+    <string name="two">二</string>
+    <string name="three">三</string>
+    <string name="four">四</string>
+    <string name="five">五</string>
+    <string name="six">六</string>
+    <string name="sevent">七</string>
+    <string name="workday">工作日</string>
+    <string name="everyday">每天</string>
+    
+    <string name="login_err">用户名或密码错误</string>
+    <string name="login_successful">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    
+    <string name="email_and_use">邮件/用户名</string>
+    <string name="password">密码</string>
+    <string name="login_in">登录</string>
+    <string name="forget_password">忘记密码 ?</string>
+    <string name="sign_up">注册</string>
+    
+    <string name="setting">设置</string>
+    <string name="user_name">用户名</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="unbord_mode">勿扰模式</string>
+    
+    <string name="change_pwd">更改密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="login_out">退出登录</string>
+    <string name="current_step">当前步数</string>
+    <string name="my_sport">我的运动</string>
+    <string name="my_sleep">我的睡眠</string>
+    <string name="activity_remind">活动提醒</string>
+    <string name="activity_remind_tip">如果您坐的时间过长，手表会轻微震动，提醒您活动一下</string>
+    
+    <string name="bind_watch">绑定手表</string>
+    <string name="calali">消耗</string>
+    <string name="distance">距离</string>
+    <string name="wake_up">唤醒</string>
+    <string name="light_sleep">浅睡</string>
+    <string name="deep_sleep">深睡</string>
+    <string name="bind_tip">您还没有绑定设备，请先绑定</string>
+    <string name="scan_plusdot_watch_tip">请确认手表电源已经开启并在手表附件</string>
+    <string name="scan_plusdot_watch">正在搜索Plusdot手表</string>
+    <!--  -->
+    
+    <string name="label">"标签"</string>
+    <string name="alarm_list_title">"闹钟"</string>
+    <string name="add_alarm">"添加玲闹钟"</string>
+    <string name="desk_clock_button_description">"时钟显示"</string>
+    <string name="default_label">"闹钟"</string>
+    <string name="menu_desk_clock">"座钟"</string>
+    <string name="menu_edit_alarm" >"修改闹钟设置"</string>
+    <string name="enable_alarm">"启用闹钟"</string>
+    <string name="delete_alarm">"取消闹钟"</string>
+    <string name="disable_alarm">"停用闹钟"</string>
+    <string name="delete_alarm_confirm">"将会取消此闹钟。"</string>
+    <string name="alarm_notify_snooze_label">"<xliff:g id="LABEL">%s</xliff:g>（已暂停）"</string>
+    <string name="alarm_repeat">"重复"</string>
+    <string name="alarm_vibrate">"振动"</string>
+    <string name="alert">"铃声"</string>
+    <string name="time">"时间"</string>
+    <string name="set_alarm">"设置闹钟"</string>
+    <string name="restart_search">"重新搜索"</string>
+    
+    <string name="router_complete_prepress">完成进度</string>
+    <string name="revert">"还原"</string>
+    <string name="delete">"删除闹钟"</string>
+    <string name="alarm_alert_dismiss_text">"取消"</string>
+    <string name="alarm_volume_title">"闹钟音量"</string>
+    <string name="alarm_volume_summary">"设置闹钟音量"</string>
+    <string name="silent_alarm_summary">"静音"</string>
+    <string name="alarm_notify_text">"选择暂停或关闭此闹钟。"</string>
+    <string name="alarm_alert_snooze_text">"暂停再响"</string>
+    <string name="alarm_alert_alert_silenced">"闹钟响铃时间为 <xliff:g id="MINUTES">%d</xliff:g> 分钟"</string>
+    <string name="alarm_notify_snooze_text">"已将闹钟设置为从现在起 <xliff:g id="TIME">%s</xliff:g>后再提醒。选中可以取消。"</string>
+    <string name="alarm_alert_snooze_set">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟。"</string>
+
+    <string-array name="alarm_set">
+	    <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+	    <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+    <!--  
+    <string name="day">"1 天"</string>
+    -->
+    <string name="days">"<xliff:g id="DAYS">%s</xliff:g> 天"</string>
+    <string name="hour">"1 小时"</string>
+    <string name="hours" msgid="2071487018566991613">"<xliff:g id="HOURS">%s</xliff:g> 小时"</string>
+    <string name="minute">"1 分钟"</string>
+    <string name="minutes">"<xliff:g id="MINUTES">%s</xliff:g> 分钟"</string>
+    <string name="every_day">"每天"</string>
+    <string name="never">"一律不"</string>
+    <string name="day_concat">", "</string>
+    <string name="clock_instructions">"选择要显示的时钟。"</string>
+    <string name="analog_gadget">"模拟时钟"</string>
+    <string name="settings">"设置"</string>
+    <string name="alarm_in_silent_mode_title">"静音模式下闹钟响"</string>
+    <string name="alarm_in_silent_mode_summary">"手机处于静音模式时，闹钟仍会响"</string>
+    <string name="snooze_duration_title">"再响间隔"</string>
+  <string-array name="snooze_duration_entries">
+    <item msgid="8337408933053603125">"5 分钟"</item>
+    <item msgid="5294206441496024610">"10 分钟"</item>
+    <item msgid="2165904039211935470">"15 分钟"</item>
+    <item msgid="7248236967714374250">"20 分钟"</item>
+    <item msgid="738394723625179423">"25 分钟"</item>
+    <item msgid="1180222611308391616">"30 分钟"</item>
+  </string-array>
+  <string-array name="snooze_duration_values">
+    <item msgid="3655014754453084122">"5"</item>
+    <item msgid="8939029597449573449">"10"</item>
+    <item msgid="3922647341176353315">"15"</item>
+    <item msgid="5821804105985044459">"20"</item>
+    <item msgid="6048861883552402852">"25"</item>
+    <item msgid="2740866721232379791">"30"</item>
+  </string-array>
+  <string name="alarm_klaxon_service_desc">"在 DeskClock 中设置的闹钟铃声播放服务。"</string>
+  
+  <!-- ble -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="burn">消耗</string>
+    <string name="unknown_device">没有找到蓝牙设备</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    
+    <!-- 菜单主界面 -->
+    <string name="menu_information">个人资料</string>
+    <string name="menu_records">饮食记录</string>
+    <string name="menu_device">智能硬件</string>
+    <string name="menu_about">关于巢客</string>
+    <string name="menu_logout">注销</string>
+    <string name="menu_feedback">意见反馈</string>
+    
+    <string name="main_menu_select_image">选择本地图片</string>
+    <string name="main_menu_photograph">拍照</string>
+    
+    <string name="main_menu_network_connection_timeout">网络连接超时,请检查网络是否畅通...</string>
+    <string name="main_menu_network_connection_exception">网络连接异常……</string>
+    <string name="main_menu_system_below">您的系统低于android4.3，部分功能将无法使用！</string>
+    <string name="main_menu_notbluetooth">您的设备不支持蓝牙！</string>
+    <string name="main_menu_notblebluetooth">您 的设备不支持低功耗蓝牙！</string>
+    <string name="main_menu_notcard">未找到存储卡，无法存储照片！</string>
+    <string name="main_menu_want_logout">您确定要退出登录吗？</string>
+    <string name="done">确定</string>
+    <string name="cancel">取消</string>
+    <string name="main_menu_set_head">设置头像</string>
+    <string name="main_menu_exit">再按一次退出程序</string>
+    <string name="main_menu_data_parsing">数据解析异常！</string>
+
+    
+    <!--个人资料页面  -->
+    <string name="userinfo_input_nick">请输入昵称</string>
+    <string name="userinfo_cm">厘米</string>
+    <string name="height">身高</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="year">年</string>
+    <string name="mouth">月</string>
+    <string name="day">日</string>
+    <string name="birthday">生日</string>
+    <string name="cweight">当前体重</string>
+    <string name="tweight">目标体重</string>
+    <string name="kg">千克</string>
+    <string name="userinfo_fill_info">填写信息</string>
+    <string name="userinfo_load_info">正在获取信息,请稍后...</string>
+    <string name="Anti_lost">防丢</string>
+    
+    <string name="Anti_lost_tip">添加时间，手表会在蓝牙断开后的这个时间提醒您</string>
+    
+    <string name="other">其它</string>
+    
+    <string name="phone_bluetooth_open">请确认手机蓝牙开启</string>
+    <string name="derbice_nearby">请确认智能设备在附近</string>
+    <string name="cancle_bind_watch">是否确认解绑，解绑后运动数据将清零？</string>
+    <string name="user_name_tip">请输入用户名</string>
+    <string name="name_null_tip">昵称不能为空，请输入昵称!</string>
+    
+    <string name="total_stepnum_in_month">月累计步数:</string>
+    <string name="total_calorie_in_month">累计消耗:</string>
+    <string name="total_mileage_in_month">累计里程:</string>
+    
+    <string name="calorie_str"> 卡路里</string>
+    <string name="kilometre_str"> 公里</string>
+    <string name="pic_path">保存到 "DCIM/Camera" 路径</string>
+    
+    <string name="Photo">拍照</string>
+    <string name="mode">模式</string>
+    <string name="Beep">蜂鸣</string>
+    <string name="Vibration">震动</string>
+    <string name="Beep_Vibration">蜂鸣+震动</string>
+    
+    <string name="bind_successfully">绑定成功</string>
+    <string name="search_tip">请确定智能手表已经开启并在手机附近</string>
+    <string name="approximate">≈</string>
+    <string name="bind">绑定</string>
+    <string name="search_ble_now">正在搜索蓝牙设备……</string>
+    <string name="calorie_unit">大卡</string>
+    <string name="meter_unit">米</string>
+    <string name="kilometer_unit">千米</string>
+    <string name="hour_unit">时</string>
+    <string name="min_unit">分</string>
+    
+    
+    <string name="troubles_hooting">故障排除</string>
+    <string name="common_problem">常见问题</string>
+    <string name="fit_models">适配机型</string>
+    
+    <string name="app_version">APP版本</string>
+    <string name="version_update">固件版本</string>
+    
+    <string name="downloading">请稍等，正在下载固件</string>
+    <string name="net_err">网络错误</string> 
+    <string name="power_warning_title">电量提示</string>
+    
+    <string name="power_warning_text_begin">手机电量低于</string>
+    <string name="power_warning_text_end">请及时充电</string>
+    <string name="power_warning_text">手机电量低,请及时充电</string>
+    <string name="bind_watch_tip">正在绑定，请按下右上角的“确认键”</string>
+        
+    <!-- Menu items -->
+    <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开</string>
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止</string>
+    
+    <string name="zq_cloud_study">云端匹配</string>
+    <string name="zq_manual_study">手动学习</string>
+    <string name="zq_your_device_not_manual">您的遥控设备,\n尚未进行云端码库匹配</string>
+    <string name="zq_your_device_exist_manual">您的遥控设备,\n进行过云端匹配,是否重新匹配</string>
+    <string name="zq_please_infrared_remote_control_box">请在手表灯亮起时,\n按下右上角按键,完成设备的匹配</string>
+    <string name="zq_wait_key">等待按键中...</string>
+    <string name="zq_please_remote_control_box">请将遥控器对准红外盒子,\n按下任意按键</string>
+    <string name="zq_match_codesing">正在进行云端码库匹配...</string>
+    <string name="zq_match_time_5s">大约需要5秒,请耐心等待\n         </string>
+    <string name="zq_match_device_model">匹配到如下设备型号\n请选择一个与你设备对应的型号进行匹配</string>
+    <string name="zq_match_err">未检测到您当前设备型号</string>
+    <string name="zq_match_other">您可以尝试击其他按键再次重新匹配\n或者选择手动学习设备</string>
+    <string name="zq_re_match">重新匹配</string>
+    <string name="zq_match_ok">匹配成功</string>
+    <string name="zq_study_ok">学习成功</string>
+    <string name="zq_match_text">快去试试控制您的设备吧</string>
+    <string name="zq_no_device_please_check">连接设备失败，请检查...</string>
+    <string name="change_name">更改昵称</string>
+    <string name="notifiacation_tip">请在通知读取权限，勾选+o watch才能获取电话，短信来电提示！</string>
+    <string name="notification_warning">温馨提示</string>
+    <string name="timeover">超时，请重新连接</string>
+    
+    <string name="num_cola">瓶可乐</string>
+    <string name="num_playground">圈400米操场</string>
+    <string name="rescale">重新扫描</string>
+    
+    <string name="smart_clock">智能闹钟</string>
+    
+    <string name="smart_watch_p1">SMART WATCH P1(点击手表绑定)</string>
+    <string name="smart_watch_p1_paired">SMART WATCH P1(点击手表解绑)</string>
+    
+    <string name="smart_watch_p2">SMART WATCH P2(点击绑定)</string>
+    <string name="smart_watch_p2_paired">SMART WATCH P2(已绑定)</string>
+    <string name="start">开始</string>
+    <string name="sync_tip">是否进行同步 ?</string>
+    <string name="register_exist">用户存在</string>
+    <string name="register_fail">注册失败</string>
+    <string name="register_successful">注册成功</string>
+    <string name="confirm_tip">搜索到手表，请按下手表“确认键”完成配对!</string>
+    <string name="close_to_watch">请将手表靠近手机!</string>
+    <string name="binding_watch">请稍等，正在绑定手表...</string>
+    <string name="unbind_tip">没连接蓝牙，强制解绑会导致之前设置在手表的信息（闹钟，久坐）残留在手表中</string>
+    <string name="start_update">开始升级</string>
+    <string name="copy_code">复制兑换码</string>
+    
+<!--     <string name="select_local_pic">Select the local picture</string>
+    <string name="photograph">Photograph</string>> -->
+</resources>

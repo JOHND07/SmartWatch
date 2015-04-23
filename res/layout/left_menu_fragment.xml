@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+    
+    <!-- user information layout -->
+    <RelativeLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center" >
+        <!--  
+        <ImageView
+            android:id="@+id/use_image"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/account_info_pic" />
+        -->
+     <RelativeLayout 
+         android:layout_marginTop="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:gravity="center_vertical" >
+      <ImageView
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:src="@drawable/me_head_bg" />
+
+      <com.guogee.smartwatch.widget.CircularImage
+          android:id="@+id/cover_user_photo"
+          android:layout_width="74.0dip"
+          android:layout_height="74.0dip"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+      </RelativeLayout>
+      
+        <TextView
+            android:id="@+id/use_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="John-D"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    
+    <!-- sport layout -->
+    <RelativeLayout
+        android:layout_below="@+id/user_layout"
+        
+        android:id="@+id/sport_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+       <View 
+           android:layout_width="fill_parent"
+           android:layout_height="0.1dp"
+           android:background="@drawable/main_menu_line" />        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:text="@string/my_sport"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/main_menu_sport_icon" />
+    </RelativeLayout>
+    
+    
+    <!-- sleep Layout -->
+    <View 
+        android:layout_below="@+id/sport_layout"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />   
+   <RelativeLayout
+        android:layout_below="@+id/sport_layout"
+       
+        android:visibility="visible"
+        android:id="@+id/sleep_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center_vertical"
+            android:text="@string/my_sleep"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/main_menu_sleep_icon" />
+    </RelativeLayout>
+    
+       
+    <!-- activity remind Layout -->
+    <View 
+        android:layout_below="@+id/sleep_layout"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />    
+    <RelativeLayout
+        android:layout_below="@+id/sleep_layout"
+        
+        android:id="@+id/sport_target_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center_vertical"
+            android:text="@string/str_sport_target"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/main_menu_target_icon" />
+    </RelativeLayout>
+        
+     <!-- bind watch Layout -->
+    <View 
+        android:layout_below="@+id/sport_target_layout"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />     
+    <RelativeLayout
+        android:layout_below="@+id/sport_target_layout"
+        
+        android:id="@+id/bind_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:gravity="center_vertical"
+            android:text="@string/bind_watch"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/main_menu_binding_icon" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_below="@+id/bind_layout"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />
+    <RelativeLayout
+        android:layout_below="@+id/bind_layout"
+        
+        android:visibility="gone"
+        android:id="@+id/gift_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView5"
+            android:gravity="center_vertical"
+            android:text="好礼兑换"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/plusdot_set_gift" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_below="@+id/gift_layout"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@drawable/main_menu_line" />
+    <RelativeLayout
+        android:layout_below="@+id/gift_layout"
+        
+        android:visibility="gone"
+        android:id="@+id/bean_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/left_menu_click_btn" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:gravity="center_vertical"
+            android:text="能量豆"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/plusdot_set_bean" />
+    </RelativeLayout>
+    
+   <RelativeLayout
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center" >
+      <ImageView
+          android:clickable="false"
+          android:id="@+id/setup_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="20dp"
+          android:gravity="center_vertical"
+          android:src="@drawable/main_menu_setup_icon" />
+    </RelativeLayout>
+    
+</RelativeLayout>

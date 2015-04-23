@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekStrings">
+		<item>Sun,</item>
+		<item>Mon,</item>
+		<item>Tues,</item>
+		<item>Wed,</item>
+		<item>Thur,</item>
+		<item>Fri,</item>
+		<item>Sat,</item>
+	</string-array>
+	
+    <string-array name="monthStrings">
+		<item></item>
+		<item>Jan</item>
+		<item>Feb</item>
+		<item>Mar</item>
+		<item>Apr</item>
+		<item>may</item>
+		<item>Jun</item>
+		<item>Jul</item>
+		<item>Aug</item>
+		<item>Sept</item>
+		<item>Oct</item>
+		<item>Nov</item>
+		<item>Dec</item>
+	</string-array>
+	
+    <string-array name="bateryArray">
+		<item>@drawable/zq_batery_1</item>
+		<item>@drawable/zq_batery_2</item>
+		<item>@drawable/zq_batery_3</item>
+		<item>@drawable/zq_batery_4</item>
+		<item>@drawable/zq_batery_5</item>
+	</string-array>
+	
+</resources>

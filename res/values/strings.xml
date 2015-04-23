@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">+o watch</string>
+<!--  
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_values">Add values to the chart</string>    
+	<string name="x">X</string>    
+	<string name="y">Y</string>
+	<string name="add">Add</string>
+	<string name="new_series">New series</string>
+-->    
+    <!-- ble -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    
+    <string name="num_cola">xCola</string>
+    <string name="num_playground">x400 meters playground</string>
+    
+    <!-- add 24 -->
+    <string name="smart_minute">Minute</string>
+    <string name="my_recoder">My Recoder</string>
+    <string name="day1">Monday</string>
+    <string name="day2">Tuesday</string>
+    <string name="day3">Wednesday</string>
+    <string name="day4">Thursday</string>
+    <string name="day5">Friday</string>
+    <string name="day6">Saturday</string>
+    <string name="day7">Sunday</string>
+
+    <string name="loading">Loading...</string>
+    <string name="mins_eg_str">h</string>
+    <string name="minute_unit">min</string>
+    
+    <string name="str_current_mounth">Month</string>
+    <string name="str_current_date">Date</string>
+    <string name="str_today">Today</string>
+    <string name="sync">Sync</string>
+    <string name="syncing">Syncing </string>
+    <string name="str_yesterday">Yesterday</string>
+    <string name="str_sport_target">Target setting</string>
+    
+    <string name ="connect_tip">Connecting smart watch</string>
+    <string name ="connected_tip">Connected smart watch</string>
+    <string name ="disconnected_tip">DisConnected smart watch</string>
+    
+    <string name ="disconnect">Bluetooth disconnect , Please check the device was connectted ?</string>
+    
+    <string name="exit_tip">Press”back”button again to exit</string>
+    <string name="remindsetting">Remind setting</string>
+    <string name="phone">Phone</string>
+    <string name="message">Message</string>
+    <string name="email">Email</string>
+    <string name="event">Events</string>
+    <string name="battery">Battery</string>
+    <string name="socialcontact">Social contact</string>
+    <string name="webchat">Wechat</string>
+    <string name="QQ">QQ</string>
+    <string name="Twitter">Twitter</string>
+    <string name="FaceBook">FaceBook</string>
+    <string name="skype">Skype</string>
+    <string name="whatsApp">WhatsApp</string>
+    
+    
+    <string name="home">Home page</string>
+    <string name="account">Account</string>
+    <string name="store">Store</string>
+    <string name="found">Searching watch</string>
+    <string name="feedback">Feedback</string>
+    
+    <string name="addClock">Add alarm clock</string>
+    <string name="delClock">Delete alarm clock</string>
+    <string name="repeat">Repeat</string>
+    <string name="snooze">Remind later</string>
+    
+    <string name="cancle">Cancel</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="alarmClock">Set alarm clock</string>
+    
+    <string name="one">Monday</string>
+    <string name="two">Tuesday</string>
+    <string name="three">Wednesday</string>
+    <string name="four">Thursday</string>
+    <string name="five">Friday</string>
+    <string name="six">Saturday</string>
+    <string name="sevent">Sunday</string>
+    <string name="workday">Weekdays</string>
+    <string name="everyday">Weekdays</string>
+    
+    <string name="login_err">Incorrect username or password</string>
+    <string name="login_successful">Login Success</string>
+    <string name="login_fail">Login failed</string>
+    
+    <string name="email_and_use">Email/Username</string>
+    <string name="password">Password</string>
+    <string name="login_in">Login in</string>
+    <string name="forget_password">Forgot password ?</string>
+    <string name="sign_up">Sign up</string>
+    
+    <string name="setting">Settings</string>
+    <string name="user_name">Username</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="unbord_mode">Do not disturb</string>
+    
+    <string name="change_pwd">Change password</string>
+    <string name="forget_pwd">Forgot password</string>
+    <string name="login_out">Log out</string>
+    <string name="my_sport">My sport</string>
+    <string name="my_sleep">My sleep</string>
+    <string name="activity_remind">Exercise reminder</string>
+    <string name="activity_remind_tip">The watch will remind to do sports with vibration if you sit too long</string>
+    
+    <string name="bind_watch">Paired Watch</string>
+    <string name="calali">Calorie</string>
+    <string name="burn">Burn</string>
+    <string name="distance">Distance</string>
+    <string name="wake_up">Wake-up</string>
+    <string name="light_sleep">Light Sleep</string>
+    <string name="deep_sleep">Deep Sleep</string>
+    <string name="bind_tip">unbind the device,please bind it</string>
+    <string name="scan_plusdot_watch_tip">Please make sure power on</string>
+    <string name="scan_plusdot_watch">Please make sure power on</string>
+    <!--  -->
+    <string name="trace_tip">Track activity/sleep,bluetooth 4.0  wireless connection</string>
+    <string name="plusdot_watch">Plusdot Watch</string>
+    <string name="binded_watch">Paired Watch</string>
+    <string name="step"></string>
+    <string name="step1">step</string>
+    <string name="hour_num">h</string>
+    <string name="minute_num">m</string>
+    <string name="target_num">TGT：</string>
+    <string name="wakeup_space">Wakeup Space</string>
+    <string name="alarm">Alarm</string>
+    <string name="smart_alarm">Smart Alarm</string>
+    
+    <string name="smart_alarm_tip">Add alarm,watch will wake you up at the specified time.</string>
+    
+    <string name="start_time">From</string>
+    <string name="end_time">To</string>
+    <string name="smart_start_time">Start</string>
+    <string name="interval">Interval</string>
+    <string name="remind">Reminder</string>
+    
+    <string name="Mon">Mon</string>
+    <string name="Tues">Tues</string>
+    <string name="Wed">Wed</string>
+    <string name="Thur">Thur</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+  
+    <!-- ble -->
+
+    
+    <!-- 菜单主界面 -->
+    <string name="menu_information">User Information</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="main_menu_select_image">Select a Photo</string>
+    <string name="main_menu_photograph">Select a Photo</string>
+    <string name="main_menu_network_connection_timeout">Network connects times out, please check whether network connection ?</string>
+    <string name="main_menu_network_connection_exception">Network Connection is abnormal.</string>
+    <string name="main_menu_system_below">Your system is lower than android4.3, part of the function will not be able to use!</string>
+    <string name="main_menu_notbluetooth">Your device does not support Bluetooth.</string>
+    <string name="main_menu_notblebluetooth">Your device does not support low energy Bluetooth.</string>
+    <string name="main_menu_notcard">Not found  memory, can’t store photos.</string>
+    <string name="main_menu_want_logout">Do you make sure to log out?</string>
+    <string name="done">Yes</string>
+    <string name="cancel">No</string>
+    <string name="main_menu_set_head">Set profile picture</string>
+    <string name="main_menu_exit">Press again to exit.</string>
+    <string name="main_menu_data_parsing">Abnormal data parsing.</string>
+
+    
+    <!--个人资料页面  -->
+    <string name="time">Time</string>
+    <string name="userinfo_input_nick">Edit name</string>
+    <string name="userinfo_cm">CM</string>
+    <string name="height">Height</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="year">Year</string>
+    <string name="mouth">Month</string>
+    <string name="day">day</string>
+    <string name="birthday">BirthDay</string>
+    <string name="cweight">Current Weight</string>
+    <string name="tweight">Target Weight</string>
+    <string name="kg">Kg</string>
+    <string name="userinfo_fill_info">Edit Profile</string>
+    <string name="userinfo_load_info">Trying to get the information, Please hold on.</string>
+    <string name="Anti_lost">Anti-lost</string>
+    
+    <string name="Anti_lost_tip">Add time,watch will remind you after bluetooth disconnecting at this time</string>
+    
+    <string name="other">other</string>
+    <string name="cancle_bind_watch">Remove the paired devices</string>
+    <string name="user_name_tip">Please enter a username</string>
+    <string name="name_null_tip">The user name cannot be blank, please enter the name !</string>
+    
+    
+    <string name="total_stepnum_in_month">Total steps of this month:</string>
+    <string name="total_calorie_in_month">Burn:</string>
+    <string name="total_mileage_in_month">Mileage:</string>
+    
+    <string name="calorie_str"> calorie</string>
+    <string name="calorie_unit">kcal</string>
+    
+    <string name="kilometre_str"> km</string>
+    <string name="pic_path">Save it to "DCIM/Camera" path</string>
+    
+    <string name="Photo">Take photos remotely</string>
+    <string name="mode">Mode</string>
+    <string name="Beep">Beep</string>
+    <string name="Vibration">Vibration</string>
+    <string name="Beep_Vibration">Beep+Vibration</string>
+    <string name="approximate">≈</string>
+    <string name="current_step">Current Step</string>
+    <string name="sync_success">sync Successfully</string>
+    <string name="sync_error">sync failure</string>
+    <string name="search_tip">Please make sure the smart watch has been opened in nearby and mobile phone</string>
+    
+    <string name="bind_successfully">Bind successfully</string>
+    <string name="bind">Bind</string>
+    <string name="search_ble_now">Searching equipment......</string>
+    <string name="meter_unit">m</string>
+    <string name="kilometer_unit">km</string>
+    <string name="hour_unit">h</string>
+    <string name="min_unit">m</string>
+    <string name ="connecting">Connecting...</string>
+    
+    <string name="troubles_hooting">Troubleshooting</string>
+    <string name="common_problem">Common problem</string>
+    <string name="fit_models">Fit models</string>
+    <string name="app_version">APP Version</string>
+    <string name="version_update">Version update</string>
+    <string name="progress">%d%%</string>
+    
+    <string name="power_warning_title">Power tips</string>
+    <string name="power_warning_text_begin">Phone Battery is less than</string>
+    <string name="power_warning_text_end">please charge</string>
+    <string name="power_warning_text">Phone battery is low, please charge</string>
+    <string name="bind_watch_tip">Please press the confirm button</string>
+    
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="zq_please_infrared_remote_control_box">Please watch the light is on,\nPress the upper right corner of the keys, complete equipment</string>
+    
+    <string name="change_name">Change Name</string>
+    <string name="notifiacation_tip">Pls tick "+o watch" in  "Notice read permission" to obtain incoming call,SMS remind！</string>
+    <string name="notification_warning">Reminder</string>
+    <string name="timeover">TimeOut,Please ReConnect.</string>
+    <string name="rescale">Re-Scale</string>
+    
+    <string name="smart_watch_p1">SMART WATCH P1</string>
+    <string name="smart_watch_p1_paired">SMART WATCH P1(Paired)</string>
+    
+    <string name="smart_watch_p2">SMART WATCH P2</string>
+    <string name="smart_watch_p2_paired">SMART WATCH P2(Paired)</string>
+    <string name="start">Start</string>
+    <string name="sync_tip">Confirm whether the synchronization?</string>
+    <string name="register_exist">This user already exists</string>
+    <string name="register_fail">Registration failed</string>
+    <string name="register_successful">Successful registration</string>
+    <string name="confirm_tip">Find the watch,press "confirm"butoon for complete paired </string>
+    <string name="close_to_watch">Put your watch near the phone.</string>   
+    <string name="binding_watch">Please wait a moment, binding is watch...</string>
+    <string name="unbind_tip">Bluetooth disconnected ,the information was setted(alarm etc) will residues in the watch if unbinding</string>
+    <string name="smart_clock">Alarm Clock</string>
+    <string name="start_update">Start Update</string>
+</resources>

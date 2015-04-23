@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="#ffffffff"  
+    android:orientation="vertical" >  
+  
+    <LinearLayout  
+        android:visibility="gone"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" >  
+  
+        <LinearLayout  
+            android:layout_width="0dip"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1" >  
+  
+            <Button  
+                android:id="@+id/single_view_btn"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:text="单图" />  
+        </LinearLayout>  
+  
+        <LinearLayout  
+            android:layout_width="0dip"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1" >  
+            <Button  
+                android:id="@+id/double_view_btn"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:text="双图" />  
+        </LinearLayout>  
+    </LinearLayout>  
+  
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/left_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/my_recoder"
+            android:textColor="#ffffff"
+            android:textSize="18sp"  >
+        </TextView>
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/right_btn" />
+     </LinearLayout>
+        
+          
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/barview_content"  
+        android:layout_width="fill_parent"  
+        android:layout_height="400dp" >  
+    </LinearLayout>  
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="平均每日睡眠" />
+        <TextView
+            android:id="@+id/sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="8时15分" />
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

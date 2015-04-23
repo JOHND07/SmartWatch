@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_conner" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="220dp" >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="龙武游戏礼包"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <!-- code -->
+    <LinearLayout 
+        android:id="@+id/code_ly"
+        android:layout_below="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="visible" >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="兑换码为:" />
+        <TextView 
+            android:id="@+id/code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="xxx-xxxxx"
+            android:textColor="@color/background_color"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </LinearLayout>
+
+    
+    <!-- content -->
+    <LinearLayout 
+        android:id="@+id/content_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/code_ly"
+        android:gravity="center" >
+        <TextView 
+            android:id="@+id/content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="此礼包可以在 龙武 长安大街激活激活后将获得游戏道具" />
+    </LinearLayout>
+    
+<!--     <View 
+        android:id="@+id/line"
+        android:layout_below="@+id/content_ly"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="0.1dp"
+        android:background="@color/background_color" />  
+ -->     
+ 
+<!--     <RelativeLayout android:layout_below="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+     <Button
+        android:id="@+id/button_back_mydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@android:string/cancel"
+        android:textColor="#007aff" />
+     <Button
+         android:id="@+id/button_ok_mydialog"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="28dp"
+         android:background="@null"
+         android:text="@android:string/cancel"
+         android:textColor="#007aff" />
+    </RelativeLayout>
+ -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/code_btn_conner"
+        android:gravity="bottom|center_horizontal"
+         >
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#007aff" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#007aff" />
+    </LinearLayout>
+    
+    </RelativeLayout>
+</LinearLayout>

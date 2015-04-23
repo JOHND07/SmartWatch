@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e2e2e2" >
+    
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/version_update"
+            android:textColor="#ffffff"
+            android:textSize="18sp"  >
+        </TextView>
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/right_btn" />
+     </LinearLayout>
+    
+   <RelativeLayout
+		  android:layout_width="fill_parent"
+          android:layout_height="match_parent" >
+	    <WebView 
+	        android:visibility="gone"
+	         android:id="@+id/webView"
+	         android:layout_width="fill_parent"
+	         android:layout_height="match_parent"
+	         android:layout_above="@+id/downloadLayout"
+	        />
+	    <LinearLayout android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_margin="20dp" >
+	    <TextView 
+	        android:id="@+id/error_tip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="1.升级时,“!”号会亮起，请勿关闭蓝牙"
+            android:textSize="18sp"
+            android:textColor="@color/textColor" /> 
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:text="2.升级时,请勿离开此页面"
+	        android:textSize="18sp"
+	        android:textColor="@color/textColor" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/downloadLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="vertical" >
+	        <Button
+	            android:id="@+id/downloadBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="35dip"
+	            android:layout_gravity="center"
+	            android:background="@drawable/person_info_btn"
+			    android:text="@string/start_update"
+			    android:gravity="center"
+			    android:textSize="18sp"
+			    android:textColor="@android:color/white" /> 
+			    
+	       <!--  <Button
+	            android:id="@+id/updateBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="7dip"
+	            android:layout_gravity="center"
+			    android:text="update_now"
+			    android:textSize="18sp" /> -->
+	    </LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/textviewProgress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/downloadLayout"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="144dp"
+	        android:text=""
+	        android:textColor="@color/textColor"
+	        android:textAppearance="@android:style/TextAppearance.Large" />
+
+	    <ProgressBar
+	        android:id="@+id/progressbar_file"
+	        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/downloadLayout"
+	        android:layout_centerHorizontal="true"
+	        android:max="100"
+	        android:layout_marginBottom="70dp" />
+	    
+	    <TextView
+	        android:id="@+id/textviewUploading"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/textviewProgress"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="52dp"
+	        android:text=""
+	        android:textColor="@color/textColor"
+	        android:textAppearance="@android:style/TextAppearance.Large" />
+	     
+	</RelativeLayout>    
+</LinearLayout>

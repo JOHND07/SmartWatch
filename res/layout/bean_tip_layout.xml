@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+    
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="如何获取能量豆"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sync"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </LinearLayout>
+        
+    
+    <RelativeLayout 
+        android:visibility="visible"
+        
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <!-- <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/" > -->
+        <TextView
+            android:id="@+id/textView1"
+            android:text="1.每天跑1000步"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginLeft="20dp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_alignParentRight="true"
+            android:text="+1" />
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/plusdot_gift_bean" />
+       <!--  </RelativeLayout> -->
+        <View 
+            android:layout_below="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />       
+    </RelativeLayout>
+    
+    <!-- textView2 -->
+<RelativeLayout 
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+        <TextView
+            android:id="@+id/textView2"
+            android:text="2.分享1位好友"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginLeft="20dp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_alignParentRight="true"
+            android:text="+1" />
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/plusdot_gift_bean" />
+        <View 
+            android:layout_below="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />       
+    </RelativeLayout>
+    
+
+    <ListView 
+        android:visibility="gone"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>
+
+
+
+
+
+

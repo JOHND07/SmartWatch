@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/transparent_black">
+
+    <include 
+        android:id="@+id/clounds_dialog_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        layout="@layout/r_clouds_dialog_item"/>
+    
+     <include 
+        android:id="@+id/clounds_dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_above="@+id/btn_ok"
+        android:visibility="gone"
+        layout="@layout/r_clouds_dialog_list"/>
+     
+	<Button 
+	    android:id="@+id/btn_ok"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"
+	    android:background="@drawable/zq_study_pli_icon_bg"
+	    android:text="ok"
+	    android:textColor="#fff"
+	    android:textSize="18sp"/>
+</RelativeLayout>

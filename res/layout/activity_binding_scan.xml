@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/titleview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/smart_alarm"
+            android:textColor="#ffffff"
+            android:textAppearance="@android:style/TextAppearance.Medium" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/right_btn" />
+        </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_ly"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="232dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@id/android:list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@drawable/diet_line"
+                        android:dividerHeight="1dp" >
+                    </ListView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/diet_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_not_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="232dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dip"
+                        android:layout_marginTop="22dp"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/unknown_device"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_bluetooth_open" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/derbice_nearby" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/butt_rescan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="重新搜索" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_scaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dip"
+                android:layout_marginTop="22dp"
+                android:gravity="center_horizontal|center_vertical" >
+               <!-- 
+                <ProgressBar
+                    android:indeterminate="false"
+                    android:layout_marginLeft="5dp"
+                    style="@style/myProgressBarStyleLarge"
+                    android:indeterminateDuration="700"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressBar1"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip" />
+               -->
+               <ProgressBar 
+                    android:id="@+id/progressBar1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" /> 
+                    
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/search_ble_now" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="请确定蓝牙电子秤在已经开启并在手机附近" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

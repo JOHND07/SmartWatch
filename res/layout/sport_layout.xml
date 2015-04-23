@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.guogee.smartwatch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+        <LinearLayout
+        android:id="@+id/title_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/left_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/left_btn" />
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="@string/my_sport"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/right_Btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/right_btn" />
+        </LinearLayout>
+
+        <RelativeLayout
+              android:id="@+id/time_data_ly"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/title_ly"
+              android:layout_marginTop="25dp"
+              android:layout_centerHorizontal="true" >
+              <ImageButton
+                  android:id="@+id/time_next"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="40dp"
+                  android:background="@drawable/main_date_next" />
+              <TextView
+                  android:id="@+id/time_data"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                  android:text="2014/07/15"
+                  android:textSize="26sp"
+                  android:textColor="@android:color/white" />
+              <ImageButton
+                  android:id="@+id/time_pre"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginLeft="40dp"
+                  android:background="@drawable/main_date_prev" />    
+          </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/clock"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="35dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true" >
+          <LinearLayout
+              android:id="@+id/sport_ly"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true" >
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/main_ico_burn" />
+                  <TextView
+                      android:id="@+id/calali_text_str"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/burn"
+                      android:textColor="@android:color/white" />
+              </LinearLayout>
+
+              <View
+                  android:layout_width="0.1dp"
+                  android:layout_height="fill_parent"
+                  android:background="@color/main_line_color" />
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/main_ico_distance" />
+                  <TextView
+                      android:id="@+id/distance_text_str"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/distance"
+                      android:textColor="@android:color/white" />
+              </LinearLayout>
+
+              <View
+                  android:layout_width="0.1dp"
+                  android:layout_height="fill_parent"
+                  android:background="@color/main_line_color" />
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/main_ico_time" />
+                  <TextView
+                      android:id="@+id/time_text_str"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:text="@string/time"
+                      android:textColor="@android:color/white" />
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/sport_ly"
+              android:orientation="horizontal" >
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <TextView
+                      android:id="@+id/calorie_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="0"
+                      android:textColor="@android:color/white"
+                      android:textSize="32sp" />
+                   <TextView 
+                      android:id="@+id/calorie_unit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:text="@string/calorie_unit"
+                      android:textColor="@android:color/white"
+                      android:layout_marginLeft="2dp" />
+              </LinearLayout>
+
+              <View
+                  android:layout_width="0.1dp"
+                  android:layout_height="fill_parent"
+                  android:background="@color/main_line_color" />
+
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <TextView
+                      android:id="@+id/distance_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="0"
+                      android:textColor="@android:color/white"
+                      android:textSize="32sp" />
+                   <TextView 
+                      android:id="@+id/distance_unit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:text="@string/meter_unit"
+                      android:textColor="@android:color/white"
+                      android:layout_marginLeft="2dp" />
+              </LinearLayout>
+
+              <View
+                  android:layout_width="0.1dp"
+                  android:layout_height="fill_parent"
+                  android:background="@color/main_line_color" />
+              <!-- <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  android:text="6&apos;33&apos;&apos;"
+                  <TextView
+                      android:id="@+id/time_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="0"
+                      android:textColor="@android:color/white"
+                      android:textSize="32sp" />
+                   <TextView
+                      android:id="@+id/sport_time_unit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:text="@string/mins_eg_str"
+                      android:textColor="@android:color/white"
+                      android:layout_marginLeft="2dp" />
+              </LinearLayout> -->
+              
+              <LinearLayout
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center" >
+                  <!-- android:text="6&apos;33&apos;&apos;" -->
+                  <TextView
+                      android:id="@+id/hour_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:visibility="gone"
+                      android:text="0"
+                      android:textColor="@android:color/white"
+                      android:textSize="32sp" />
+                  <TextView 
+                      android:visibility="gone"
+                      android:id="@+id/hour_unit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:text="@string/hour_num"
+                      android:textColor="@android:color/white" />
+                  <TextView
+                      android:id="@+id/minute_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="0"
+                      android:textColor="@android:color/white"
+                      android:textSize="32sp" />
+                  <TextView 
+                      android:id="@+id/min_unit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:text="@string/minute_unit"
+                      android:textColor="@android:color/white" />
+              </LinearLayout>
+          </LinearLayout>
+      </RelativeLayout>
+
+      <LinearLayout 
+          android:visibility="gone"
+          android:id="@+id/ble_statue_ly"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:gravity="center"
+          android:layout_below="@+id/time_data_ly" >
+          <TextView 
+              android:id="@+id/connect_tip"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="20dp"
+              android:text="@string/connect_tip"
+              android:textColor="@android:color/white" />
+          <!-- style="@android:style/Widget.ProgressBar.Small" -->
+          <ProgressBar 
+              android:layout_gravity="center"
+              android:id="@+id/search_progress"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:indeterminate="false"
+              android:layout_marginLeft="5dp"
+              style="@style/myProgressBarStyleLarge"
+              android:indeterminateDuration="700" />   
+          <View
+              android:id="@+id/divide_line"
+              android:layout_width="1dp"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:visibility="gone"
+              android:background="@color/main_line_color" />
+          <ImageView 
+              android:id="@+id/batery_img"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="gone"
+              android:background="@drawable/zq_batery_1" />
+          <TextView 
+              android:id="@+id/batery_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="0%"
+              android:textColor="@android:color/white"
+              android:visibility="gone" />
+          <LinearLayout 
+              android:id="@+id/sync_layout"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="gone" >
+          <FrameLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" >
+          <ProgressBar 
+              android:id="@+id/sync_btn"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_marginLeft="20dp"
+              android:visibility="gone"
+              style="@style/ProgressBarStyleLarge"
+              android:indeterminateDuration="700"
+              android:indeterminate="false" />
+          <ImageButton 
+              android:id="@+id/sync_img_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="40dp"
+              android:background="@drawable/zq_sync_btn" />
+          </FrameLayout>
+          
+          <TextView 
+              android:id="@+id/sync_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:textColor="@android:color/white"
+              android:text="@string/syncing" />
+          </LinearLayout>
+      </LinearLayout>
+
+      <!--  -->
+      <com.guogee.smartwatch.widget.SportProgressBarSurfaceView
+          android:id="@+id/sport_progress"
+          android_custom:style="STROKE"
+          android:layout_width="240dp"
+          android:layout_height="240dp"
+          android:layout_below="@+id/time_data_ly"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="50dp"
+          android_custom:max="240"
+          android_custom:roundBackgroudWidth="25dip"
+          android_custom:roundColor="#2ec4dd"
+          android_custom:roundLength="25dip"
+          android_custom:roundProgressColor="#dfe88d"  
+          android_custom:roundWidth="20dip"
+          android_custom:textColor="@android:color/white"
+          android_custom:textIsDisplayable="true"
+          android_custom:textSize="28sp"
+          android_custom:title="@string/my_sport"
+          android_custom:titleTextSize="22sp" />
+      
+      <!-- android_custom:roundColor="#2ec4dd" 
+      android_custom:roundProgressColor="#dfe88d" -->
+      
+      
+      <!--  
+      <com.guogee.smartwatch.widget.TasksCompletedView
+            android:id="@+id/sport_progress"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/main_progress_bg"
+            app:circleColor="#2ec4dd"
+            app:radius="95dip"
+            app:ringColor="@android:color/white"
+            app:strokeWidth="28.5dip" />
+            -->
+      <!-- #2ec4dd , #dfe88d-->
+      
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:orientation="horizontal"
+          android:layout_below="@+id/sport_progress" >
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:layout_marginRight="35dp" >
+          <ImageButton
+              android:id="@+id/sport_target_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/main_clock_btn" />
+          </LinearLayout>
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="left"
+              android:layout_marginLeft="35dp" >
+          <ImageButton
+              android:id="@+id/sport_history_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/main_history_btn" />
+          </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/sport_progress"
+          android:layout_centerHorizontal="true"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_marginTop="40dp" >
+          <TextView
+              android:id="@+id/sport_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="15dp"
+              android:text="@string/current_step"
+              android:textSize="16sp"
+              android:textColor="@android:color/white" />
+          <LinearLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center" >
+          <TextView
+              android:id="@+id/sport_num"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="56sp"
+              android:text="0"
+              android:textColor="@android:color/white" />
+          <TextView
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step"
+              android:textColor="@android:color/white" />
+          </LinearLayout>
+          <View 
+              android:layout_width="105dp"
+              android:layout_height="0.5dp"
+              android:layout_marginTop="3dp"
+              android:background="@android:color/white" />
+          
+          <LinearLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="10dp" >
+          <!-- <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/target_num"
+              android:textSize="17sp"
+              android:textColor="@android:color/white" /> -->
+          
+<!--           <ImageView               
+              android:layout_gravity="center_vertical"
+              android:layout_width="12dp"
+              android:layout_height="18dp"
+              android:background="@drawable/target_step_pic"/>
+ -->          
+           <ImageView
+              android:layout_gravity="center_vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/main_menu_target_icon_b"/>
+          
+           <TextView
+               android:visibility="gone"
+               android:layout_gravity="center_vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=":"
+               android:textSize="22sp"
+               android:textColor="@android:color/white" />
+          <TextView
+              android:layout_gravity="center_vertical"
+              android:layout_marginLeft="5dp"
+              android:id="@+id/target_num"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="10000"
+              android:textSize="22sp"
+              android:textColor="@android:color/white" />
+          <TextView
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/step"
+              android:textSize="17sp"
+              android:textColor="@android:color/white" />
+          </LinearLayout>
+      </LinearLayout>
+      
+</RelativeLayout>
